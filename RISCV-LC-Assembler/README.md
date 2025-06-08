@@ -1,27 +1,32 @@
-# ceng3420
-CENG3420 Lab Assignments
+# RISCV-LC Assembler
+A RISC-V LC Assembler is a lightweight, simplified assembler designed for the RISC-V instruction set architecture (ISA), typically used in educational or embedded systems contexts. 
+The "LC" often stands for "Little Computer" or "Low Complexity", indicating a minimalistic version of RISC-V tailored for learning or constrained environments.
 
-## Lab 2-1: Finish the RV32I assembler including 25 instructions in `asm.c` as follows
-* Integer Register-Immediate Instructions:
-            slli, xori, srli, srai, ori, andi, lui
-* Integer Register-Register Operations:
-            sub, sll, xor, srl, sra, or, and
-* Unconditional Jumps:
-            jalr, jal
-* Conditional Branches:
-           bne, blt, bge
-* Load and Store Instructions:
-            lb, lh, lw, sb, sh, sw
+### The Key Features of a RISC-V LC Assembler:
 
-## For more info.
+- Supports a Subset of RISC-V Instructions
 
-- please refer to the slides: http://www.cse.cuhk.edu.hk/~byu/CENG3420/2023Spring/index.html
+- Simplified Synta
 
-- please refer to the code website: https://github.com/baichen318/ceng3420
+- Educational Use Case
 
-## History
-* Feb. 23, 2023: Update Lab 2-1, including
-    - update the golden binaries,
-    - add 'add4' benchmark
-* Feb. 15, 2023: Lab 2-1 is released
-"# ceng3420" 
+- Lightweight Implementation
+
+## Get the RV321 Assembler
+
+- git clone https://github.com/Ethannggggg/RISC-V-simulator.git
+
+- cd RISC-V-simulator
+
+- git checkout RISCV-LC-Assembler
+
+## Run the assembler
+
+### Assemble a RISC-V file and generate a binary
+- ./asm [input.asm] [output.bin]
+
+### Example:
+./asm benchmarks/isa.asm isa.bin
+
+- This is for checking the output machine code: isa.bin if you have implemented the assembler
+
