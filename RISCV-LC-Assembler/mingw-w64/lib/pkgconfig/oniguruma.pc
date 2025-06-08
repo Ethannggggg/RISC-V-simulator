@@ -1,0 +1,14 @@
+prefix=/c/ci/jq-suite_1604730441944/_h_env/Library/mingw-w64
+exec_prefix=/c/ci/jq-suite_1604730441944/_h_env/Library/mingw-w64
+libdir=/c/ci/jq-suite_1604730441944/_h_env/Library/mingw-w64/lib
+includedir=/c/ci/jq-suite_1604730441944/_h_env/Library/mingw-w64/include
+datarootdir=/c/ci/jq-suite_1604730441944/_h_env/Library/mingw-w64/share
+datadir=/c/ci/jq-suite_1604730441944/_h_env/Library/mingw-w64/share
+
+Name: oniguruma
+Description: Regular expression library
+Version: 6.1.3
+Requires:
+Libs: -L${libdir} -lonig
+Cflags: -I${includedir}
+
