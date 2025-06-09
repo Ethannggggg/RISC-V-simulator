@@ -2,21 +2,20 @@
 # /*                                                             */
 # /*                  RISCV-LC Assembler                         */
 # /*                                                             */
-# /*                     CEG3420 Lab2                            */
-# /*                 cbai@cse.cuhk.edu.hk                        */
+# /*                      Ethan Ng                               */
+# /*                 ethan0725@gmail.com                         */
 # /*           The Chinese University of Hong Kong               */
 # /*                                                             */
 # /***************************************************************/
 
-CC := gcc
-SRC := $(wildcard *.c)
+SRC := $(shell find . -name "*.c")
 TGT := asm
 OPT := -Wall -std=c99 -Wno-return-type -O3 # -Werror
 VAL := tools/validate.sh
 
 .default: all
 
-all: $(TGT)
+all: asm
 
 $(TGT): $(SRC)
 	$(CC) $(OPT) $^ -o $@
@@ -26,4 +25,4 @@ validate: $(TGT)
 
 .PHONY: clean
 clean:
-	del /f asm *.bin
+	rm -f asm *.bin
