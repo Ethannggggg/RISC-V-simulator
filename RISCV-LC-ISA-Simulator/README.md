@@ -20,11 +20,13 @@ It allows users to write, assemble, and debug RISC-V assembly programs in a cont
 ## Run the assembler
 
 ### Assemble a RISC-V file and generate a binary
-- ./asm [input.asm] [output.bin]
+- ``` bash 
+  ./asm [input.bin]
 
 ### Example:
-./asm benchmarks/isa.asm isa.bin
-
+```bash 
+ ./sim benchmarks/isa.bin
+```
 - This is for checking the output machine code: isa.bin if you have implemented the assembler
 
 
