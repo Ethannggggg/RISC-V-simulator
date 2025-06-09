@@ -1,12 +1,12 @@
 # RISCV-LC Simulator
-A RISC-V LC Simulator is a lightweight software tool designed to emulate the behavior of a simplified RISC-V "Little Computer" (LC) processor for educational purposes. 
-It allows users to write, assemble, and debug RISC-V assembly programs in a controlled environment, often with reduced complexity compared to full-scale RISC-V implementations.
+The RISC-V LC (Low Complexity) ISA simulator is a tool designed to emulate the RISC-V architecture, specifically targeting the LC subset of the RISC-V instruction set architecture. 
+RISC-V is an open standard for computer architecture that allows for extensibility and customization.
 
 ### The Key Features of a RISC-V LC Assembler:
 
-- Simplified Instruction Set
-- Integrated Assembler & Debugger
-- Visualization Tools
+- Low Complexity
+- Instruction Set Emulation
+- VCustomizability
 - Educational Focus
 
 ## Get the RV321 Assembler
@@ -15,14 +15,14 @@ It allows users to write, assemble, and debug RISC-V assembly programs in a cont
 
 - cd RISC-V-simulator
 
-- git checkout RISCV-LC-Assembler
+- git checkout RISCV-LC-ISA-Simulator
 
 ## Run the assembler
 
 ### Assemble a RISC-V file and generate a binary
-- ``` bash 
-  ./asm [input.bin]
-
+``` bash 
+  ./sim [input.bin]
+```
 ### Example:
 ```bash 
  ./sim benchmarks/isa.bin

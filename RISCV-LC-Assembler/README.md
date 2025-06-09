@@ -23,10 +23,12 @@ The "LC" often stands for "Little Computer" or "Low Complexity", indicating a mi
 ## Run the assembler
 
 ### Assemble a RISC-V file and generate a binary
-- ./asm [input.asm] [output.bin]
-
+``` bash 
+./asm [input.asm] [output.bin]
+```
 ### Example:
+``` bash
 ./asm benchmarks/isa.asm isa.bin
-
+```
 - This is for checking the output machine code: isa.bin if you have implemented the assembler
 
